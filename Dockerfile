@@ -45,7 +45,7 @@ RUN apt-get update \
   libzip-dev \
   zip \
   && rm -rf /var/lib/apt/lists/* \
-  && docker-php-ext-configure gd --with-freetype-dir=/usr/include/freetype --with-jpeg-dir=/usr/include/ \
+  && docker-php-ext-configure gd –with-xpm-dir=/usr --with-freetype-dir=/usr/include/freetype --with-jpeg-dir=/usr/include/ \
   && docker-php-ext-configure imap --with-kerberos --with-imap-ssl \
   && docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu \
   && docker-php-ext-configure opcache --enable-opcache \
